@@ -1,0 +1,13 @@
+# スキーマ定義
+# ただのテキストファイル
+
+# データ構造
+type User {
+  id: ID!
+  name: String
+}
+
+# 取得用クエリ
+type Query {
+  users: [User!]!
+}
