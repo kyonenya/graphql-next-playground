@@ -3,7 +3,8 @@
   "entry_file": "pages/index.js",
   "scripts": {
     "start": "next dev -p 3450",
-    "codegen": "graphql-codegen --config graphql/codegen-server.yml",
+    "codegen:server": "graphql-codegen --config graphql/codegen-server.yml",
+    "codegen:client": "graphql-codegen --config graphql/codegen-client.yml",
     "tsc": "tsc -w --noEmit"
   },
   "dependencies": {
@@ -16,7 +17,9 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typed-document-node": "^2.2.13",
     "@graphql-codegen/typescript": "^2.5.1",
+    "@graphql-codegen/typescript-operations": "^2.4.2",
     "@graphql-codegen/typescript-resolvers": "^2.6.6",
     "@types/react": "^17.0.47",
     "@types/react-dom": "^17.0.17",
