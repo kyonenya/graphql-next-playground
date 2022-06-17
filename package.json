@@ -8,6 +8,7 @@
     "tsc": "tsc -w --noEmit"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.8",
     "apollo-server-micro": "^3.9.0",
     "graphql": "^16.5.0",
     "micro": "^9.3.4",
